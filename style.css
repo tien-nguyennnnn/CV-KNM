@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #585c68;
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.resume {
+  width: 900px;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.resume .resume_left {
+  width: 300px;
+  background: #0bb5f4;
+}
+
+.resume .resume_left .resume_profile {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.resume .resume_left .resume_profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.resume .resume_left .resume_content {
+  padding: 0 25px;
+}
+
+.resume .title {
+  margin-bottom: 20px;
+}
+
+.resume .resume_left .bold {
+  color: #fff;
+}
+
+.resume .resume_left .regular {
+  color: #b1eaff;
+}
+
+.resume .resume_item {
+  padding: 25px 0;
+  border-bottom: 2px solid #b1eaff;
+}
+
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child {
+  border-bottom: 0px;
+}
+
+.resume .resume_left ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.resume .resume_left ul li:last-child {
+  margin-bottom: 0;
+}
+
+.resume .resume_left ul li .icon {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: #0bb5f4;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume .resume_left ul li .data {
+  color: #b1eaff;
+}
+
+.resume .resume_left .resume_skills ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: #b1eaff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume .resume_left .resume_skills ul li .skill_name {
+  width: 25%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #009fd9;
+  position: relative;
+}
+
+.resume .resume_left .resume_skills ul li .skill_per {
+  width: 15%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.resume .resume_left .resume_social .semi-bold {
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.resume .resume_right {
+  width: 520px;
+  background: #fff;
+  padding: 25px;
+}
+
+.resume .resume_right .bold {
+  color: #0bb5f4;
+}
+
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education ul,
+.resume .resume_right .resume_projects ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.resume .resume_right ul li {
+  position: relative;
+}
+
+.resume .resume_right ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info {
+  margin-bottom: 20px;
+}
+
+.resume .resume_right ul li .info p {
+  margin-bottom: 5px;
+}
+
+.resume .resume_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before,
+.resume .resume_right .resume_projects ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #0bb5f4;
+  background: white;
+}
+
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after,
+.resume .resume_right .resume_projects ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 115%;
+  background: #0bb5f4;
+}
+
+/* Phần Giới thiệu & Mục tiêu được cải tiến */
+.about-content {
+  padding: 0 5px;
+}
+
+.about-paragraph {
+  margin-bottom: 12px;
+  text-align: justify;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 5px;
+}
+
+.about-paragraph i {
+  color: #0bb5f4;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.career-goal {
+  margin-top: 15px;
+  padding: 12px 15px;
+  background: #f5f9fc;
+  border-left: 3px solid #0bb5f4;
+  border-radius: 0 4px 4px 0;
+}
+
+.goal-title {
+  font-weight: 600;
+  color: #0bb5f4;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.goal-title i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.goal-list {
+  padding-left: 22px;
+}
+
+.goal-list li {
+  list-style-type: disc;
+  margin-bottom: 6px;
+  position: relative;
+  left: 0;
+  line-height: 1.5;
+}
+
+/* Phần chung */
+.resume_social a {
+  text-decoration: none;
+  color: #b1eaff;
+  transition: all 0.3s ease;
+}
+
+.resume_social a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.resume .resume_right a {
+  color: #0bb5f4;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.resume .resume_right a:hover {
+  text-decoration: underline;
+  color: #009fd9;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 950px) {
+  .resume {
+    width: 95%;
+    margin: 20px auto;
+    flex-direction: column;
+  }
+  
+  .resume .resume_left,
+  .resume .resume_right {
+    width: 100%;
+  }
+  
+  .resume .resume_left .resume_profile {
+    height: 200px;
+  }
+}
+
+.lang {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  z-index: 1;
+}
+
+.lang:hover {
+  cursor: pointer;
+}
+
+.lang img {
+  width: 30px;
+}
+
+.hide {
+  display: none;
+}
+.highlight-list {
+  padding-left: 20px;
+  color: #fff;
+}
+
+.highlight-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 22px;
+  line-height: 1.5;
+}
+
+.highlight-list li i {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  color: #fff;
+}
